@@ -1,0 +1,20 @@
+@import 'imported_stuff';
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: lighten(#89C4F4, 10%);
+}
+
+nav .navbar-nav{
+  margin: 0;
+
+  li:hover{
+    background: #65C6BB;
+  }
+}
+
+.timeline-panel{
+  background: lighten(#F4B350,20%);
+}
