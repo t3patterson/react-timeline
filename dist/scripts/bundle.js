@@ -48382,9 +48382,9 @@ var TestView        = require( './components/testResource/component-test-page.js
 console.log('say hi');
 
 var routes = (
-  React.createElement(Route, {name: "app", path: "/", handler: App}, 
+  React.createElement(Route, {name: "app", path: window.location.pathname, handler: App}, 
     React.createElement(DefaultRoute, {handler: HomeView}), 
-    
+
     React.createElement(Route, {name: "about", handler: AboutView}), 
     React.createElement(Route, {name: "test", handler: TestView}), 
 

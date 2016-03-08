@@ -24,9 +24,9 @@ var TestView        = require( './components/testResource/component-test-page.js
 console.log('say hi');
 
 var routes = (
-  <Route name="app" path="/"  handler={App} >
+  <Route name="app" path={window.location.pathname}  handler={App} >
     <DefaultRoute handler={HomeView}/>
-    
+
     <Route name="about" handler={AboutView}/>
     <Route name="test" handler={TestView}/>
 
