@@ -10,7 +10,7 @@ var Home = React.createClass({
         timelineStyle: null, //info, default, primary, warning
         badgeStyle: "primary",  //'timeline-inverted' to put on right side
         title: "Build API Module",
-        date: "Tuesday, March 8, 2016",
+        date: Date,
         listTitle: "Goals",
         description: "Create a module-hub for interacting with the database.\
                      We want to do this so that we can create/read/update/delete records in a simple way throughout our application",
@@ -84,10 +84,14 @@ var Home = React.createClass({
   },
 
   render: function(){
+
     return(
-      <ul className="timeline">        
-        { this._generateTimeline(this.state.events)}
-      </ul>
+      <div>
+        <h1>Super Gulp React Schedule</h1>
+        <ul className="timeline">        
+          { this._generateTimeline(this.state.events)}
+        </ul>
+      </div>
       )
   }
 })

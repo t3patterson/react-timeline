@@ -48113,7 +48113,7 @@ var Home = React.createClass({displayName: "Home",
         timelineStyle: null, //info, default, primary, warning
         badgeStyle: "primary",  //'timeline-inverted' to put on right side
         title: "Build API Module",
-        date: "Tuesday, March 8, 2016",
+        date: Date,
         listTitle: "Goals",
         description: "Create a module-hub for interacting with the database.\
                      We want to do this so that we can create/read/update/delete records in a simple way throughout our application",
@@ -48187,9 +48187,13 @@ var Home = React.createClass({displayName: "Home",
   },
 
   render: function(){
+
     return(
-      React.createElement("ul", {className: "timeline"}, 
-         this._generateTimeline(this.state.events)
+      React.createElement("div", null, 
+        React.createElement("h1", null, "Super Gulp React Schedule"), 
+        React.createElement("ul", {className: "timeline"}, 
+           this._generateTimeline(this.state.events)
+        )
       )
       )
   }
@@ -48384,7 +48388,7 @@ console.log('say hi');
 var routes = (
   React.createElement(Route, {name: "app", path: window.location.pathname, handler: App}, 
     React.createElement(DefaultRoute, {handler: HomeView}), 
-
+    
     React.createElement(Route, {name: "about", handler: AboutView}), 
     React.createElement(Route, {name: "test", handler: TestView}), 
 

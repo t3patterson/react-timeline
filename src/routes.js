@@ -26,7 +26,7 @@ console.log('say hi');
 var routes = (
   <Route name="app" path={window.location.pathname}  handler={App} >
     <DefaultRoute handler={HomeView}/>
-
+    
     <Route name="about" handler={AboutView}/>
     <Route name="test" handler={TestView}/>
 
