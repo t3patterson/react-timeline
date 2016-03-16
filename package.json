@@ -2,7 +2,7 @@
   "name": "psadmin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,8 @@
     "jquery": "2.1.4",
     "lodash": "^4.1.0",
     "react": "^0.13.3",
-    "react-router": "^0.13.3"
+    "react-router": "^0.13.3",
+    "express": "~4.9.8"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
@@ -36,5 +37,8 @@
     "vinyl-source-stream": "^1.1.0",
     "reactify": "^1.1.1",
     "browserify": "^11.0.1"
-  }
+  },
+  "scripts":{
+    "start": "node server.js"
+  } 
 }
