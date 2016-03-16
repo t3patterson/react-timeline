@@ -27,7 +27,7 @@ var runSequence = require('run-sequence');
 
 //Setup Configuration Options
 var config = {
-  port: 3000,
+  port: 3001,
   devBaseUrl: 'http://localhost',
   paths: {
     html: './src/*.html',
