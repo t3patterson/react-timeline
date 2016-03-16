@@ -48153,7 +48153,8 @@ var Home = React.createClass({displayName: "Home",
         items: [
           "We will create a form in react that successfully posts to our backend-database using our flux implementation",
           "Build form-validation in the React form component to provide feedback to the the user when she has entered something invalid",
-          "The form will use the 'transitionTo' mixin to route to the front page on completion"
+          "The form will use the 'transitionTo' mixin to route to the front page on completion",
+          "ok"
         ]
       }
 
